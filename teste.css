@@ -1,0 +1,105 @@
+body{
+    background-color: lightblue;
+    font-family: 'Times New Roman', Times, serif;
+}
+div{
+    display: flex;
+    align-content: center;
+    justify-content: center;
+}
+.div1{
+    border-radius: 50%;
+    padding: 50px;
+}
+
+.avatar1{
+    background-color: transparent;
+    border-radius: 50%;
+    height: 230px;
+    width: 230px;
+    border: none;
+    cursor: pointer;
+    overflow: hidden;
+    padding: 0%;
+   
+}
+.avatar1:hover{
+    border-color: rgb(30, 30, 30);
+}
+.playername1{
+    text-align: center;
+    width: 300px;
+    height: 30px;
+    font-size: 20pt;
+    background-color: rgb(255, 255, 255);
+    font-weight: bold;
+}
+.playermoney1{
+    margin-top: 20px;
+    text-align: center;
+    width: 500px;
+    height: 50px;
+    background-color: rgb(255, 255, 255);
+    border: 6px solid black ;
+    font-size: 50pt;
+    color: #b48f32;
+}
+.gains{
+    background-color: green;
+    margin: 25px;
+    width: 150px;
+    height: 50px;
+    font-size: 20pt;
+    font-weight: bold;
+    border: 4px solid black;
+}
+.gains:hover{
+    background-color: rgb(89, 117, 89);
+    border: 5px solid black;
+    cursor:pointer;
+}
+.losses{
+    background-color: rgb(206, 50, 50);
+    margin: 25px;
+    width: 150px;
+    height: 50px;
+    font-size: 20pt;
+    font-weight: bold;
+    border: 4px solid black;
+}
+.losses:hover{
+    background-color: rgb(143, 92, 92);
+    border: 5px solid black;
+    cursor:pointer;
+}
+.endgame{
+    color: white;
+    background-color: black;
+    width: 300px;
+    height: 40px;
+    font-size: 20pt;
+    font-weight: bold;
+    border: 5px solid gray;
+}
+.endgame:hover{
+    background-color: rgb(12, 12, 12);
+    border: 6px solid darkgray
+}
+#endgame1{
+    margin-bottom: 70px;
+}
+#endgame2{
+    margin-top: 70px;
+}
+
+.Emprestimo{
+    width: 500px;
+    height: 70px;
+    background-color: silver;
+    font-weight: bold;
+    font-size: 30pt;
+    border: 10px outset #b48f32;
+}
+.Emprestimo:hover{
+    background-color: rgb(175, 168, 168);
+}
