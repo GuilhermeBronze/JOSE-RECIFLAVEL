@@ -1,0 +1,62 @@
+@charset "UTF-8";
+
+*{
+
+    padding: 0;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+
+#jumscare{
+
+    background-image: linear-gradient(to top, #3d6fda, #89b9e6);
+    background-size: contain;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+
+}
+
+#mainMenu{
+
+    display: flex;
+    justify-content: center;
+    margin: 100px;
+    background-color: rgba(0, 0, 0, 0.116);
+
+}
+
+#conteudo{
+
+    
+    
+
+}
+
+h1{
+
+    color: white;
+    font-size: 26pt;
+    margin: 10px;
+
+}
+span{
+    font-size: 0.5pt;
+}
+
+h2{
+
+    color: white;
+    font-size: 18pt;
+    margin: 10px;
+
+}
+
+#players{
+
+    display: flex;
+    justify-content: center;
+    margin: 20px;
+
+}
