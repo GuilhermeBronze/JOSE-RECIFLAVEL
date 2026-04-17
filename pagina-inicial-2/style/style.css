@@ -8,7 +8,7 @@
 
 }
 
-#jumscare{
+body{
 
     background-image: linear-gradient(to top, #3d6fda, #89b9e6);
     background-size: contain;
@@ -18,45 +18,89 @@
 
 }
 
-#mainMenu{
-
+main{
     display: flex;
+    flex-direction: column;
+    align-items: center;
     justify-content: center;
-    margin: 100px;
-    background-color: rgba(0, 0, 0, 0.116);
-
+    height: 70vh;
 }
 
-#conteudo{
+#container{
 
-    
-    
+    background-color: rgba(0, 0, 0, 0.247);
+    padding: 15px;
 
 }
 
 h1{
-
     color: white;
-    font-size: 26pt;
-    margin: 10px;
-
+    font-size: 2.2em;
+    margin-bottom: 5px;
+    text-align: center;
+    
 }
-span{
-    font-size: 0.5pt;
+
+#little{
+    color: white;
+    font-size: 10pt;
 }
 
 h2{
-
     color: white;
-    font-size: 18pt;
-    margin: 10px;
+    font-size: 1.5em;
+    margin-bottom: 100px;
+    text-align: center;
+}
+
+p{
+
+    text-align: center;
 
 }
 
 #players{
+    color: white;
+    font-size: 1.5em;
+    margin-bottom: 20px;
+    text-align: center;
 
-    display: flex;
-    justify-content: center;
-    margin: 20px;
+}
+
+#playerCount{
+    padding: 5px;
+    font-size: 1em;
+    border-radius: 40%;
+    border: solid 2px #2a4c96c2;
+    background-color: #c1e1ff;
+}
+
+#initCash{
+    color: white;
+    font-size: 1.5em;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+#initCashF{
+    padding: 2px;
+    font-size: 0.8em;
+   
+    border-radius: 7px;
+    border: solid 2px #2a4c96c2;
+    background-color: #bee1ff;
+    text-align: center;
+}
+
+#initCashF::-webkit-outer-spin-button,
+#initCashF::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+#eztz{
+
+    padding: 10px 20px;
+    font-size: 1.2em;
 
 }

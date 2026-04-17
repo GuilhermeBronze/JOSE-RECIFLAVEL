@@ -7,32 +7,30 @@
     <link rel="stylesheet" href="style/style.css">
     <link rel="shortcut icon" href="media/image.png" type="image/x-icon">
 </head>
-<body id="jumscare">
+<body>
     
-    <section id="mainMenu">
-        <div id="conteudo">
-            <h1>ADMINISTRABANK<span onclick="glob()" id="globglab">little</span></h1>
+    <main>
+        <div id="container">
+            <h1>ADMINISTRABANK<span id="little">little</span></h1>
             <h2>Banco Imobiliário da UNISEPE</h2>
     
-            <p id="players">
-                Selecione a quantidade de jogadores (vô máx = 6):
-                <select id="#">
+            <p id="players">Selecione a quantidade de jogadores:
+                <select id="playerCount">
                     <option value="2">2</option>
                     <option value="3">3</option>
                     <option value="4">4</option>
                     <option value="5">5</option>
                     <option value="6">6</option>
-                </select><br>
-                Insira o Dinheiro Inicial:
-                <input type="number" placeholder="Insira o Dinheiro Inicial" min="1" max="10000">
-                <!--
-                <input type="number" id="playerCount" min="2" max="6" value="2"></input>
-                -->
+                </select>
             </p>
-    
+            <p id="initCash">
+                Insira o Dinheiro Inicial: <br>
+                <input type="text" id="initCashF" placeholder="Max = R$1.500.000,00" oninput="initCashF(this)" maxlength="15">
+            </p>
+                
             <p><button onclick="iniciarJogo()" id="eztz">INICIAR</button></p>
         </div>
-    </section>
+    </main>
     
 
 
