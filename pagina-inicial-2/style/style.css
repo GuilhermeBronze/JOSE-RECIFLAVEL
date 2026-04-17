@@ -8,9 +8,19 @@
 
 }
 
+body, html{
+
+    height: 100%;
+
+}
+
 body{
 
+    display: flex;
+    flex-direction: column;
+
     background-image: linear-gradient(to top, #3d6fda, #89b9e6);
+    
     background-size: contain;
     background-attachment: fixed;
     background-position: center;
@@ -20,37 +30,51 @@ body{
 
 main{
     display: flex;
-    flex-direction: column;
     align-items: center;
     justify-content: center;
-    height: 70vh;
+    height: 100vh;
+     
 }
 
 #container{
 
-    background-color: rgba(0, 0, 0, 0.247);
-    padding: 15px;
+    background-color: rgba(42, 47, 78, 0.295);
+    border: solid black 1px;
+    border-radius: 10px;
+    
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.493);
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.432);
+    width: 50vw;
+    min-width: 440px;
 
+    
 }
 
 h1{
     color: white;
-    font-size: 2.2em;
-    margin-bottom: 5px;
+    font-size: 2.5rem;
+    margin-bottom: 0px;
     text-align: center;
-    
+
+    background-color: rgba(0, 0, 0, 0.438);
+    padding: 0.2em;
+    border-radius: 10px 10px 0px 0px;
 }
 
 #little{
     color: white;
-    font-size: 10pt;
+    font-size: 0.02em;
 }
 
 h2{
     color: white;
-    font-size: 1.5em;
-    margin-bottom: 100px;
+    font-size: 1.2em;
+    margin-bottom: 80px;
     text-align: center;
+
+    background-color: rgba(0, 0, 0, 0.438);
+    padding-bottom: 0.5em;
+    border-radius: 0 0 10px 10px;
 }
 
 p{
@@ -68,18 +92,36 @@ p{
 }
 
 #playerCount{
-    padding: 5px;
+    padding: 10px;
     font-size: 1em;
     border-radius: 40%;
     border: solid 2px #2a4c96c2;
-    background-color: #c1e1ff;
+    background-color: #ddeefd;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.13);
+    box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.205);
+    outline: none;
+    margin-top: 15px;
+}
+
+#playerCount:hover{
+
+    background-color: #ffffff;
+    transform: scale(1.1);
+
 }
 
 #initCash{
     color: white;
     font-size: 1.5em;
-    margin-bottom: 20px;
+    margin-top: 70px;
+    margin-bottom: 50px;
     text-align: center;
+}
+
+#recValue{
+
+    font-size: 0.5em;
+
 }
 
 #initCashF{
@@ -88,19 +130,66 @@ p{
    
     border-radius: 7px;
     border: solid 2px #2a4c96c2;
-    background-color: #bee1ff;
+    background-color: #ddeefd;
     text-align: center;
+
+    box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.233);
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.096);
+
+    outline: none;
+}
+
+#initCashF:hover{
+
+    background-color: #ffffff;
+    transform: scale(1.02);
+
 }
 
 #initCashF::-webkit-outer-spin-button,
 #initCashF::-webkit-inner-spin-button {
-  -webkit-appearance: none;
-  margin: 0;
+    -webkit-appearance: none;
+     margin: 0;
 }
 
 #eztz{
 
     padding: 10px 20px;
-    font-size: 1.2em;
+    font-size: 1.1em;
+    background-color: #ddeefd;
+    border: solid 2px #2a4c96c2;
+    border-radius: 10px;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.137);
+    box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.253);
+    margin-bottom: 10px;
+
+}
+
+#eztz:hover{
+
+    background-color: #ffffff;
+    transform: scale(1.1);
+    
+
+}
+
+footer{
+
+    color: white;
+    font-size: 10pt;
+    text-shadow: 1px 1px 1px black;
+
+}
+
+img{
+
+    padding-left: 30px;
+    width: 70px;
+
+}
+
+#uniseporra{
+
+    width: 140px;
 
 }

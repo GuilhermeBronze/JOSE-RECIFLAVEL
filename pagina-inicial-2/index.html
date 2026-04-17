@@ -8,10 +8,9 @@
     <link rel="shortcut icon" href="media/image.png" type="image/x-icon">
 </head>
 <body>
-    
     <main>
         <div id="container">
-            <h1>ADMINISTRABANK<span id="little">little</span></h1>
+            <h1>ADMINISTRABANK<span id="little" onclick="glob()">little</span></h1>
             <h2>Banco Imobiliário da UNISEPE</h2>
     
             <p id="players">Selecione a quantidade de jogadores:
@@ -25,29 +24,25 @@
             </p>
             <p id="initCash">
                 Insira o Dinheiro Inicial: <br>
-                <input type="text" id="initCashF" placeholder="Max = R$1.500.000,00" oninput="initCashF(this)" maxlength="15">
+                <span id="recValue">
+                    min =  e max = R$1.500.000,00<br>
+                </span>
+                <input type="text" id="initCashF" value=R$1.500.000,00 oninput="initCashF(this)" maxlength="15">
             </p>
-                
+    
             <p><button onclick="iniciarJogo()" id="eztz">INICIAR</button></p>
         </div>
     </main>
-    
-
-
-
-
-<!--  
     <footer>
-
         <div id="imagens">
-            <a href="https://portal.unisepe.com.br/unifia/graduacao/?gad_source=1&gad_campaignid=23299954535&gbraid=0AAAAAClwez8QzrZ1o1ul2t-rywHq2eqGx&gclid=Cj0KCQjws83OBhD4ARIsACblj1_HK9-EW3HSUB7Jv8agBiWY9ySzb6BZIyXSHnVXHgAtH551qr3GbkAaAjV7EALw_wcB" target="_blank"><img src="media/unifia.png" alt="logo-unifia" title="Unifia"></a>
-            <a href="https://portal.unisepe.com.br/ead/" target="_blank"><img src="media/unisepe.png" alt="logo-unisepe" title="Unisepe" id="uniseporra"></a>
+            <a href="https://portal.unisepe.com.br/unifia/graduacao/?gad_source=1&gad_campaignid=23299954535gbraid=0AAAAAClwez8QzrZ1o1ul2t-rywHq2eqGxgclid=Cj0KCQjws83OBhD4ARIsACblj1_HK9-EW3HSUB7Jv8agBiWY9ySzb6BZIyXSHnVXHgAtH551qr3GbkAaAjV7EALw_wcB"target="_blank"><img src="media/unifia.png" alt="logo-unifia" title="Unifia"></a>
+            <a href="https://portal.unisepe.com.br/ead/" target="_blank"><img src="media/unisepe.png"alt="logo-unisepe" title="Unisepe" id="uniseporra"></a>
             <p id="rodapo" title="† 2026 - 2026"> © Site desenvolvido por Jean Chico Morreu</p>
         </div>
-
     </footer>
+   
 
--->    
+    
 
 <script src="script/script.js"></script>
 

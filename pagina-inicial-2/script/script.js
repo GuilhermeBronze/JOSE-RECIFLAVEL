@@ -1,16 +1,21 @@
 function glob(){
 
-    let jumscare = document.querySelector("body")
-    const audio = new Audio("media/globglab.mp3")
+    const audio = new Audio("media/reducedglobglab.mp3")
 
     audio.play()
-        window.alert("Glob Glab")
 
-        
-        body.style.backgroundImage = "url(style/jumscare.png)";
-        
-        
-    }
+    document.body.style.backgroundImage = "url(style/jumscare.png)";
+
+    let segundosRestantes = 10
+    const timer = setInterval (() => {
+        segundosRestantes--
+        if (segundosRestantes <=0){
+            document.body.style.backgroundImage = 'linear-gradient(to top, #3d6fda, #89b9e6)'
+            audio.pause()
+            clearInterval(timer)
+        }
+    }, 1000)
+}
     
 function lengthTest() {
 
@@ -35,6 +40,8 @@ function initCashF(i){
     i.value = `R$ ${v}`
 
 }
+
+
 
 
 
