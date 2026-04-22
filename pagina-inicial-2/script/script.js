@@ -17,7 +17,7 @@ function glob(){
     }, 1000)
 }
 
-function initCashF(i){
+function convToCash(i){
 
     let v = i.value.replace(/\D/g, '');
     v = (v/100).toFixed(2)

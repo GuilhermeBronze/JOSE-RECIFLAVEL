@@ -29,7 +29,7 @@ body{
 }
 
 #initPage{
-    display: none;
+    display: flex;
     align-items: center;
     justify-content: center;
     height: 100vh;
@@ -38,7 +38,7 @@ body{
 
 #container{
 
-    background-color: rgba(42, 47, 78, 0.295);
+    background-color: #2a2f4e4b;
     border: solid black 1px;
     border-radius: 10px;
     
@@ -218,23 +218,71 @@ img{
 #gameContainer{
 
     display: flex;
-    background-color: rgba(0, 0, 0, 0.199);
     justify-content: space-evenly;
     flex-wrap: wrap;
+
     width: 80vw;
     min-width: 550px;
     max-width: 1000px;
-    
     padding: 20px;
+    background-color: #12142275;
+    border: solid black 1px;
+    border-radius: 10px;
+    
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.493);
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.432);
 
 }
 
 #gameContainer > div{
 
-    background-color: white;
-    border: solid black 5px;
+    background-color: #717bbb9a;
+    border: solid black 1px;
+    border-radius: 10px;
+
     margin: 20px;
+    padding: 10px;
     
+}
+
+.pMenu{
+
+    color: white;
+    font-size: 15pt;
+    
+
+}
+
+.pMenu > button{
+
+    padding: 5px;
+    font-size: 12pt;
+    background-color: #ddeefd;
+
+    border-radius: 10px;
+
+}
+
+.pMenu > button:hover{
+
+    background-color: #ffffff;
+    transform: scale(1.04);
+
+}
+
+.pMenu > input{
+
+    background-color: #ddeefd;
+    margin: 5px;
+    padding: 5px;
+    outline: none;
+}
+
+.pMenu > input:hover{
+
+    background-color: #ffffff;
+    transform: scale(1.04);
+
 }
 
 #p1{
@@ -273,4 +321,9 @@ img{
 
 }
 
+button.calcButton{
+
+    padding: 4px 10px;
+
+}
 
