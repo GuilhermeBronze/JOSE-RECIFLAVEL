@@ -202,27 +202,45 @@ img{
 
 
 
-#gamePage2P{
+
+#gamePage{
 
     display: flex;
-    flex-wrap: wrap;
     align-items: center;
+    justify-content: center;
+    height: 100vh;
+    text-align: center;
+    
+}
+
+
+
+#gameContainer{
+
+    display: flex;
+    background-color: rgba(0, 0, 0, 0.199);
     justify-content: space-evenly;
-    flex-grow: 1 ;
+    flex-wrap: wrap;
+    width: 80vw;
+    min-width: 550px;
+    max-width: 1000px;
+    
+    padding: 20px;
 
 }
 
-#gamePage2P > div{
+#gameContainer > div{
 
     background-color: white;
     border: solid black 5px;
-    text-align: center;
-
+    margin: 20px;
+    
 }
 
 #p1{
 
     display: block;
+
 
 }
 
@@ -255,9 +273,4 @@ img{
 
 }
 
-#teste{
-
-    
-
-}
 

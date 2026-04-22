@@ -16,18 +16,6 @@ function glob(){
         }
     }, 1000)
 }
-    
-function lengthTest() {
-
-    const fValue = document.querySelector("input#initCashF");
-
-    if (fValue.value.length > 7) {
-
-        fValue.value = fValue.value.slice(0, 7);
-        
-    }
-
-    }
 
 function initCashF(i){
 
@@ -38,9 +26,68 @@ function initCashF(i){
     v = v.replace (/(\d)(\d{3}),/g, "$1.$2,")
     
     i.value = `R$ ${v}`
-
 }
 
+function changeGameLayout(){
+
+    let playerCountF = document.querySelector('#playerCount')
+    let playerCount = Number(playerCountF.value)
+
+
+    //document.querySelector('#p1').style.display = 'none'
+
+    switch (playerCount) {
+        case 2:
+            document.querySelector('#p3').style.display = 'none'
+            document.querySelector('#p4').style.display = 'none'
+            document.querySelector('#p5').style.display = 'none'
+            document.querySelector('#p6').style.display = 'none'
+            
+            break;
+    
+        case 3:
+            document.querySelector('#p3').style.display = 'block'
+            document.querySelector('#p4').style.display = 'none'
+            document.querySelector('#p5').style.display = 'none'
+            document.querySelector('#p6').style.display = 'none'
+
+            break
+
+        case 4:
+            document.querySelector('#p3').style.display = 'block'
+            document.querySelector('#p4').style.display = 'block'
+            document.querySelector('#p5').style.display = 'none'
+            document.querySelector('#p6').style.display = 'none'
+
+            break
+
+        case 5:
+            document.querySelector('#p3').style.display = 'block'
+            document.querySelector('#p4').style.display = 'block'
+            document.querySelector('#p5').style.display = 'block'
+            document.querySelector('#p6').style.display = 'none'
+
+            break
+
+        case 6:
+            document.querySelector('#p3').style.display = 'block'
+            document.querySelector('#p4').style.display = 'block'
+            document.querySelector('#p5').style.display = 'block'
+            document.querySelector('#p6').style.display = 'block'
+
+            break
+
+        default:
+            break;
+    }
+    
+}
+
+function startGame(){
+
+    document.querySelector('#initPage').style.display = 'none'
+    document.querySelector('#gamePage').style.display = 'flex'
+}
 
 
 
