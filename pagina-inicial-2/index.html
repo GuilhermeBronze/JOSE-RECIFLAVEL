@@ -41,116 +41,111 @@
     <div id="gamePage">
         <div id="gameContainer">
             <div id="p1" class="pMenu">
-                <p class="playerName">Jogador 1 <span class="material-symbols-outlined">edit</span></p>
+                <p class="playerName" id="playerName1">Jogador 1 <span class="material-symbols-outlined">edit</span></p>
 
-                <input type="color" name="" id="teste"><br>
-                <button onclick="subMoney" class="calcButton">-</button>
-                <input type="text" oninput="convToCash(this)" maxlength="15">
-                <button onclick="addMoney" class="calcButton">+</button><br>
+                <button onclick="subMoney(this)" class="calcButton">-</button>
+                <input type="text" oninput="convToCash(this)" maxlength="15" value="R$ 0,00">
+                <button onclick="addMoney(this)" class="calcButton">+</button><br>
 
                 <p>Saldo: .........</p>
 
-                <button onclick="loan">$ Empréstimo $</button>
-                <button onclick="fullTurn">Volta Completa</button> 
+                <button onclick="loan(this)">$ Empréstimo $</button>
+                <button onclick="fullTurn(this)">Volta Completa</button> 
 
-                <p>Empréstimo ativo: .....</p>
-                <button onclick="payLoan">Quitar Empréstimo</button><br>
-                <button onclick="collapse">Declarar Falência</button>
+                <p class="ocult">Empréstimo ativo: .....</p>
+                <button onclick ="payLoan(this)" class="ocult">Quitar Empréstimo</button><br>
+                <button onclick="collapse(this)" class="ocult">Declarar Falência</button>
+                
 
             </div>
 
             <div id="p2" class="pMenu">
-                <p class="playerName">Jogador 2 <span class="material-symbols-outlined">edit</span></p>
+                <p class="playerName" id="playerName2">Jogador 2 <span class="material-symbols-outlined">edit</span></p>
 
-                <input type="color" name="" id="teste"><br>
-                <button onclick="subMoney" class="calcButton">-</button>
-                <input type="text" oninput="convToCash(this)" maxlength="15">
-                <button onclick="addMoney" class="calcButton">+</button><br>
+                <button onclick="subMoney(this)" class="calcButton">-</button>
+                <input type="text" oninput="convToCash(this)" maxlength="15" >
+                <button onclick="addMoney(this)" class="calcButton">+</button><br>
 
                 <p>Saldo: .........</p>
 
-                <button onclick="loan">$ Empréstimo $</button>
-                <button onclick="fullTurn">Volta Completa</button> 
+                <button onclick="loan(this)">$ Empréstimo $</button>
+                <button onclick="fullTurn(this)">Volta Completa</button> 
 
-                <p>Empréstimo ativo: .....</p>
-                <button onclick="payLoan">Quitar Empréstimo</button><br>
-                <button onclick="collapse">Declarar Falência</button>
+                <p class="ocult">Empréstimo ativo: .....</p>
+                <button onclick="payLoan(this)" class="ocult">Quitar Empréstimo</button><br>
+                <button onclick="collapse(this)" class="ocult">Declarar Falência</button>
 
             </div>
 
             <div id="p3" class="pMenu">
-                <p class="playerName">Jogador 3 <span class="material-symbols-outlined">edit</span></p>
+                <p class="playerName" id="playerName3">Jogador 3 <span class="material-symbols-outlined">edit</span></p>
 
-                <input type="color" name="" id="teste"><br>
-                <button onclick="subMoney" class="calcButton">-</button>
-                <input type="text" oninput="convToCash(this)" maxlength="15">
-                <button onclick="addMoney" class="calcButton">+</button><br>
+                <button onclick="subMoney(this)" class="calcButton">-</button>
+                <input type="text" oninput="convToCash(this)" maxlength="15" >
+                <button onclick="addMoney(this)" class="calcButton">+</button><br>
 
                 <p>Saldo: .........</p>
 
-                <button onclick="loan">$ Empréstimo $</button>
-                <button onclick="fullTurn">Volta Completa</button> 
+                <button onclick="loan(this)">$ Empréstimo $</button>
+                <button onclick="fullTurn(this)">Volta Completa</button> 
 
-                <p>Empréstimo ativo: .....</p>
-                <button onclick="payLoan">Quitar Empréstimo</button><br>
-                <button onclick="collapse">Declarar Falência</button>
+                <p class="ocult">Empréstimo ativo: .....</p>
+                <button onclick="payLoan(this)" class="ocult">Quitar Empréstimo</button><br>
+                <button onclick="collapse(this)" class="ocult">Declarar Falência</button>
 
             </div>
 
             <div id="p4" class="pMenu">
-                <p class="playerName">Jogador 4 <span class="material-symbols-outlined">edit</span></p>
+                <p class="playerName" id="playerName4">Jogador 4 <span class="material-symbols-outlined">edit</span></p>
 
-                <input type="color" name="" id="teste"><br>
-                <button onclick="subMoney" class="calcButton">-</button>
-                <input type="text" oninput="convToCash(this)" maxlength="15">
-                <button onclick="addMoney" class="calcButton">+</button><br>
+                <button onclick="subMoney(this)" class="calcButton">-</button>
+                <input type="text" oninput="convToCash(this)" maxlength="15" >
+                <button onclick="addMoney(this)" class="calcButton">+</button><br>
 
                 <p>Saldo: .........</p>
 
-                <button onclick="loan">$ Empréstimo $</button>
-                <button onclick="fullTurn">Volta Completa</button> 
+                <button onclick="loan(this)">$ Empréstimo $</button>
+                <button onclick="fullTurn(this)">Volta Completa</button> 
 
-                <p>Empréstimo ativo: .....</p>
-                <button onclick="payLoan">Quitar Empréstimo</button><br>
-                <button onclick="collapse">Declarar Falência</button>
+                <p class="ocult">Empréstimo ativo: .....</p>
+                <button onclick="payLoan(this)" class="ocult">Quitar Empréstimo</button><br>
+                <button onclick="collapse(this)" class="ocult">Declarar Falência</button>
 
             </div>
 
             <div id="p5" class="pMenu">
-                <p class="playerName">Jogador 5 <span class="material-symbols-outlined">edit</span></p>
+                <p class="playerName" id="playerName5">Jogador 5 <span class="material-symbols-outlined">edit</span></p>
 
-                <input type="color" name="" id="teste"><br>
-                <button onclick="subMoney" class="calcButton">-</button>
-                <input type="text" oninput="convToCash(this)" maxlength="15">
-                <button onclick="addMoney" class="calcButton">+</button><br>
+                <button onclick="subMoney(this)" class="calcButton">-</button>
+                <input type="text" oninput="convToCash(this)" maxlength="15" >
+                <button onclick="addMoney(this)" class="calcButton">+</button><br>
 
                 <p>Saldo: .........</p>
 
-                <button onclick="loan">$ Empréstimo $</button>
-                <button onclick="fullTurn">Volta Completa</button> 
+                <button onclick="loan(this)">$ Empréstimo $</button>
+                <button onclick="fullTurn(this)">Volta Completa</button> 
 
-                <p>Empréstimo ativo: .....</p>
-                <button onclick="payLoan">Quitar Empréstimo</button><br>
-                <button onclick="collapse">Declarar Falência</button>
+                <p class="ocult">Empréstimo ativo: .....</p>
+                <button onclick="payLoan(this)" class="ocult">Quitar Empréstimo</button><br>
+                <button onclick="collapse(this)" class="ocult">Declarar Falência</button>
 
             </div>
 
             <div id="p6"  class="pMenu">
-                <p class="playerName">Jogador 6 <span class="material-symbols-outlined">edit</span></p>
+                <p class="playerName" id="playerName6">Jogador 6 <span class="material-symbols-outlined">edit</span></p>
 
-                <input type="color" name="" id=""><br>
-                <button onclick="subMoney" class="calcButton">-</button>
-                <input type="text" oninput="convToCash(this)" maxlength="15">
-                <button onclick="addMoney" class="calcButton">+</button><br>
+                <button onclick="subMoney(this)" class="calcButton">-</button>
+                <input type="text" oninput="convToCash(this)" maxlength="15" value="R$ 0,00">
+                <button onclick="addMoney(this)" class="calcButton">+</button><br>
 
                 <p>Saldo: .........</p>
 
-                <button onclick="loan">$ Empréstimo $</button>
-                <button onclick="fullTurn">Volta Completa</button> 
+                <button onclick="loan(this)">$ Empréstimo $</button>
+                <button onclick="fullTurn(this)">Volta Completa</button> 
 
-                <p>Empréstimo ativo: .....</p>
-                <button onclick="payLoan">Quitar Empréstimo</button><br>
-                <button onclick="collapse">Declarar Falência</button>
+                <p class="ocult">Empréstimo ativo: .....</p>
+                <button onclick="payLoan(this)" class="ocult">Quitar Empréstimo</button><br>
+                <button onclick="collapse(this)" class="ocult">Declarar Falência</button>
 
             </div>
         </div>
