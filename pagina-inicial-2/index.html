@@ -6,6 +6,7 @@
     <title>Unibancozinho</title>
     <link rel="stylesheet" href="style/style.css">
     <link rel="shortcut icon" href="media/image.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=edit" />
 </head>
 <body>
     <div id="initPage">
@@ -40,116 +41,116 @@
     <div id="gamePage">
         <div id="gameContainer">
             <div id="p1" class="pMenu">
-                <h3>Jogador 1</h3>
+                <p class="playerName">Jogador 1 <span class="material-symbols-outlined">edit</span></p>
+
                 <input type="color" name="" id="teste"><br>
-                <button class="calcButton">-</button>
+                <button onclick="subMoney" class="calcButton">-</button>
                 <input type="text" oninput="convToCash(this)" maxlength="15">
-                <button class="calcButton">+</button><br>
+                <button onclick="addMoney" class="calcButton">+</button><br>
 
                 <p>Saldo: .........</p>
 
-                <button>$ Empréstimo $</button>
-                <button>Volta Completa</button> 
+                <button onclick="loan">$ Empréstimo $</button>
+                <button onclick="fullTurn">Volta Completa</button> 
 
                 <p>Empréstimo ativo: .....</p>
-                <button>Quitar Empréstimo</button><br>
-                <button>Declarar Falência</button>
+                <button onclick="payLoan">Quitar Empréstimo</button><br>
+                <button onclick="collapse">Declarar Falência</button>
 
             </div>
 
             <div id="p2" class="pMenu">
-                <p>Jogador 2
+                <p class="playerName">Jogador 2 <span class="material-symbols-outlined">edit</span></p>
 
-                </p>
                 <input type="color" name="" id="teste"><br>
-                <button class="calcButton">-</button>
+                <button onclick="subMoney" class="calcButton">-</button>
                 <input type="text" oninput="convToCash(this)" maxlength="15">
-                <button class="calcButton">+</button><br>
+                <button onclick="addMoney" class="calcButton">+</button><br>
 
                 <p>Saldo: .........</p>
 
-                <button>$ Empréstimo $</button>
-                <button>Volta Completa</button> 
+                <button onclick="loan">$ Empréstimo $</button>
+                <button onclick="fullTurn">Volta Completa</button> 
 
                 <p>Empréstimo ativo: .....</p>
-                <button>Quitar Empréstimo</button><br>
-                <button>Declarar Falência</button>
+                <button onclick="payLoan">Quitar Empréstimo</button><br>
+                <button onclick="collapse">Declarar Falência</button>
 
             </div>
 
             <div id="p3" class="pMenu">
-                <p>Jogador 3</p>
+                <p class="playerName">Jogador 3 <span class="material-symbols-outlined">edit</span></p>
 
                 <input type="color" name="" id="teste"><br>
-                <button class="calcButton">-</button>
+                <button onclick="subMoney" class="calcButton">-</button>
                 <input type="text" oninput="convToCash(this)" maxlength="15">
-                <button class="calcButton">+</button><br>
+                <button onclick="addMoney" class="calcButton">+</button><br>
 
                 <p>Saldo: .........</p>
 
-                <button>$ Empréstimo $</button>
-                <button>Volta Completa</button> 
+                <button onclick="loan">$ Empréstimo $</button>
+                <button onclick="fullTurn">Volta Completa</button> 
 
                 <p>Empréstimo ativo: .....</p>
-                <button>Quitar Empréstimo</button><br>
-                <button>Declarar Falência</button>
+                <button onclick="payLoan">Quitar Empréstimo</button><br>
+                <button onclick="collapse">Declarar Falência</button>
 
             </div>
 
             <div id="p4" class="pMenu">
-                <p>Jogador 4</p>
+                <p class="playerName">Jogador 4 <span class="material-symbols-outlined">edit</span></p>
 
                 <input type="color" name="" id="teste"><br>
-                <button class="calcButton">-</button>
+                <button onclick="subMoney" class="calcButton">-</button>
                 <input type="text" oninput="convToCash(this)" maxlength="15">
-                <button class="calcButton">+</button><br>
+                <button onclick="addMoney" class="calcButton">+</button><br>
 
                 <p>Saldo: .........</p>
 
-                <button>$ Empréstimo $</button>
-                <button>Volta Completa</button> 
+                <button onclick="loan">$ Empréstimo $</button>
+                <button onclick="fullTurn">Volta Completa</button> 
 
                 <p>Empréstimo ativo: .....</p>
-                <button>Quitar Empréstimo</button><br>
-                <button>Declarar Falência</button>
+                <button onclick="payLoan">Quitar Empréstimo</button><br>
+                <button onclick="collapse">Declarar Falência</button>
 
             </div>
 
             <div id="p5" class="pMenu">
-                <p>Jogador 5</p>
+                <p class="playerName">Jogador 5 <span class="material-symbols-outlined">edit</span></p>
 
                 <input type="color" name="" id="teste"><br>
-                <button class="calcButton">-</button>
+                <button onclick="subMoney" class="calcButton">-</button>
                 <input type="text" oninput="convToCash(this)" maxlength="15">
-                <button class="calcButton">+</button><br>
+                <button onclick="addMoney" class="calcButton">+</button><br>
 
                 <p>Saldo: .........</p>
 
-                <button>$ Empréstimo $</button>
-                <button>Volta Completa</button> 
+                <button onclick="loan">$ Empréstimo $</button>
+                <button onclick="fullTurn">Volta Completa</button> 
 
                 <p>Empréstimo ativo: .....</p>
-                <button>Quitar Empréstimo</button><br>
-                <button>Declarar Falência</button>
+                <button onclick="payLoan">Quitar Empréstimo</button><br>
+                <button onclick="collapse">Declarar Falência</button>
 
             </div>
 
             <div id="p6"  class="pMenu">
-                <p>Jogador 6</p>
+                <p class="playerName">Jogador 6 <span class="material-symbols-outlined">edit</span></p>
 
                 <input type="color" name="" id=""><br>
-                <button class="calcButton">-</button>
+                <button onclick="subMoney" class="calcButton">-</button>
                 <input type="text" oninput="convToCash(this)" maxlength="15">
-                <button class="calcButton">+</button><br>
+                <button onclick="addMoney" class="calcButton">+</button><br>
 
                 <p>Saldo: .........</p>
 
-                <button>$ Empréstimo $</button>
-                <button>Volta Completa</button> 
+                <button onclick="loan">$ Empréstimo $</button>
+                <button onclick="fullTurn">Volta Completa</button> 
 
                 <p>Empréstimo ativo: .....</p>
-                <button>Quitar Empréstimo</button><br>
-                <button>Declarar Falência</button>
+                <button onclick="payLoan">Quitar Empréstimo</button><br>
+                <button onclick="collapse">Declarar Falência</button>
 
             </div>
         </div>
