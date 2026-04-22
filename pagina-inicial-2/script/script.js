@@ -77,8 +77,6 @@ function changeGameLayout(){
 
             break
 
-        default:
-            break;
     }
     
 }
