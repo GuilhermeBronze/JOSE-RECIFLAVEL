@@ -1,3 +1,12 @@
+let money = {
+    p1: 0,
+    p2: 0,
+    p3: 0,
+    p4: 0,
+    p5: 0,
+    p6: 0
+}
+
 function glob(){
 
     const audio = new Audio("media/reducedglobglab.mp3")
@@ -85,6 +94,16 @@ function startGame(){
 
     document.querySelector('#initPage').style.display = 'none'
     document.querySelector('#gamePage').style.display = 'flex'
+    let initialImput = document.querySelector('#initCashF')
+    let initialMoney = Number(initialImput.value.replace(/\D/g, '')) / 100
+    
+    for (let i = 1; i <= 6; i++){
+        money["p" + i] = initialMoney
+
+        let painel = document.querySelector('#p' + i)
+        let pMoney = painel.querySelector('.initCashInGame')
+        pMoney.textContent = "Saldo: R$ " + initialMoney.toFixed(2).replace(".", ",")
+    }
 }
 
 

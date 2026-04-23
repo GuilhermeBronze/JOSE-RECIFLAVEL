@@ -205,7 +205,7 @@ img{
 
 #gamePage{
 
-    display: flex;
+    display: none;
     align-items: center;
     justify-content: center;
     height: 100vh;
@@ -329,25 +329,25 @@ p.playerName{
 
 #p3{
 
-    display: block;
+    display: none;
 
 }
 
 #p4{
 
-    display: block;
+    display: none;
 
 }
 
 #p5{
 
-    display: block;
+    display: none;
 
 }
 
 #p6{
 
-    display: block;
+    display: none;
 
 }
 
