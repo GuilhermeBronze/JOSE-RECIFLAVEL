@@ -17,6 +17,15 @@ let turns = {
     p6: 0
 }
 
+let loanTurns = {
+    p1: 0, 
+    p2: 0, 
+    p3: 0,
+    p4: 0, 
+    p5: 0, 
+    p6: 0
+}
+
 function openPopup(message){
     let popup = document.querySelector('#popup')
     let msg = document.querySelector('#popupMsg')
@@ -63,6 +72,8 @@ function confirmLoan(){
     let ocults = activePlayer.querySelectorAll('.ocult')
     ocults.forEach(el => el.style.display = 'block')
 
+    loanTurns[id] = 0
+
     let pLoan = activePlayer.querySelector('.ocult')
     pLoan.textContent = "Empréstimo ativo: R$ " + loans[id].toFixed(2).replace(".", ",")
     checkMoney(id, activePlayer)
@@ -103,12 +114,16 @@ function fullTurn(button){
 
     turns[id] = turns[id] + 1
 
-    if (turns[id] % 2 === 0 && loans[id] > 0) {
+    if (loans[id] > 0){
+        loanTurns[id] = loanTurns[id] + 1
+    
+        if (loanTurns[id] % 2 === 0 && loans[id] > 0) {
         loans[id] = loans[id] + 30000
         openNotification("Juros de R$ 30.000,00 adicionados ao empréstimo!")
 
         let pLoan = painel.querySelector('.ocult')
         pLoan.textContent = "Empréstimo ativo: R$ " + loans[id].toFixed(2).replace(".", ",")
+    }
     }
 }
 
