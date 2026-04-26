@@ -54,7 +54,7 @@
 
                 <p class="ocult">Empréstimo ativo: .....</p>
                 <button onclick ="payLoan(this)" class="ocult">Quitar Empréstimo</button><br>
-                <button onclick="collapse(this)" class="ocult">Declarar Falência</button>
+                <button onclick="collapse(this)" class="ocultCollapse">Declarar Falência</button>
                 
 
             </div>
@@ -73,7 +73,7 @@
 
                 <p class="ocult">Empréstimo ativo: .....</p>
                 <button onclick="payLoan(this)" class="ocult">Quitar Empréstimo</button><br>
-                <button onclick="collapse(this)" class="ocult">Declarar Falência</button>
+                <button onclick="collapse(this)" class="ocultCollapse">Declarar Falência</button>
 
             </div>
 
@@ -91,7 +91,7 @@
 
                 <p class="ocult">Empréstimo ativo: .....</p>
                 <button onclick="payLoan(this)" class="ocult">Quitar Empréstimo</button><br>
-                <button onclick="collapse(this)" class="ocult">Declarar Falência</button>
+                <button onclick="collapse(this)" class="ocultCollapse">Declarar Falência</button>
 
             </div>
 
@@ -109,7 +109,7 @@
 
                 <p class="ocult">Empréstimo ativo: .....</p>
                 <button onclick="payLoan(this)" class="ocult">Quitar Empréstimo</button><br>
-                <button onclick="collapse(this)" class="ocult">Declarar Falência</button>
+                <button onclick="collapse(this)" class="ocultCollapse">Declarar Falência</button>
 
             </div>
 
@@ -127,7 +127,7 @@
 
                 <p class="ocult">Empréstimo ativo: .....</p>
                 <button onclick="payLoan(this)" class="ocult">Quitar Empréstimo</button><br>
-                <button onclick="collapse(this)" class="ocult">Declarar Falência</button>
+                <button onclick="collapse(this)" class="ocultCollapse">Declarar Falência</button>
 
             </div>
 
@@ -145,7 +145,7 @@
 
                 <p class="ocult">Empréstimo ativo: .....</p>
                 <button onclick="payLoan(this)" class="ocult">Quitar Empréstimo</button><br>
-                <button onclick="collapse(this)" class="ocult">Declarar Falência</button>
+                <button onclick="collapse(this)" class="ocultCollapse">Declarar Falência</button>
 
             </div>
         </div>
@@ -163,7 +163,16 @@
         </div>
     </footer>
    
-
+<div id="popup">
+    <div id="popupBox">
+        <p id="popupMsg">Mensagem aqui</p>
+        <input type="text" id="popupInput" oninput="convToCash(this)" maxlength="15">
+        <div id="popupButtons">
+            <button id="popupConfirm" onclick="confirmLoan()">Confirmar</button>
+            <button id="popupCancel" onclick="closePopup()">Cancelar</button>
+        </div>
+    </div>
+</div>
     
 
 <script src="script/script.js"></script>
