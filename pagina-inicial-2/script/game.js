@@ -58,7 +58,7 @@ function confirmLoan(){
     }
     
     if (balance > 300000){
-        alert("Digite um valor válido!")
+        openNotification("O valor máximo para um empréstimo é de R$300.000,00!")
         return
     }
 
@@ -89,6 +89,8 @@ function addMoney(button){
     let pMoney = painel.querySelector('.initCashInGame')
     pMoney.textContent = "Saldo: R$ " + money[id].toFixed(2).replace(".", ",")
     checkMoney(id, painel)
+    let initial = painel.querySelector('.initialInput')
+    initial.value = "R$ 0,00"
 }
 
 function subMoney(button){
@@ -101,6 +103,8 @@ function subMoney(button){
     let pMoney = painel.querySelector('.initCashInGame')
     pMoney.textContent = "Saldo: R$ " + money[id].toFixed(2).replace(".", ",")
     checkMoney(id, painel)
+    let initial = painel.querySelector('.initialInput')
+    initial.value = "R$ 0,00"
 }
 
 function fullTurn(button){
