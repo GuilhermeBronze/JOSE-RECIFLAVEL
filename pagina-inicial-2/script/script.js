@@ -102,7 +102,7 @@ function startGame(){
 
         let painel = document.querySelector('#p' + i)
         let pMoney = painel.querySelector('.initCashInGame')
-        pMoney.textContent = "Saldo: R$ " + initialMoney.toFixed(2).replace(".", ",")
+        pMoney.textContent = "Saldo: R$ " + initialMoney.toFixed(2).replace(".", ",").replace(/(\d)(\d{3})(\d{3}),/g, "$1.$2.$3,").replace(/(\d)(\d{3}),/g, "$1.$2,")
     }
 }
 

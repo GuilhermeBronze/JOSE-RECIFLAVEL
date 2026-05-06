@@ -66,7 +66,7 @@ function confirmLoan(){
     loans[id] = loans[id] + balance
 
     let pMoney = activePlayer.querySelector('.initCashInGame')
-    pMoney.textContent = "Saldo: R$ " + money[id].toFixed(2).replace(".", ",")
+    pMoney.textContent = "Saldo: R$ " + money[id].toFixed(2).replace(".", ",").replace(/(\d)(\d{3})(\d{3}),/g, "$1.$2.$3,").replace(/(\d)(\d{3}),/g, "$1.$2,")
     closePopup()
 
     let ocults = activePlayer.querySelectorAll('.ocult')
@@ -75,7 +75,7 @@ function confirmLoan(){
     loanTurns[id] = 0
 
     let pLoan = activePlayer.querySelector('.ocult')
-    pLoan.textContent = "Empréstimo ativo: R$ " + loans[id].toFixed(2).replace(".", ",")
+    pLoan.textContent = "Empréstimo ativo: R$ " + loans[id].toFixed(2).replace(".", ",").replace(/(\d)(\d{3})(\d{3}),/g, "$1.$2.$3,").replace(/(\d)(\d{3}),/g, "$1.$2,")
     checkMoney(id, activePlayer)
 }
 
@@ -87,7 +87,7 @@ function addMoney(button){
     money[id] = money[id] + valor
 
     let pMoney = painel.querySelector('.initCashInGame')
-    pMoney.textContent = "Saldo: R$ " + money[id].toFixed(2).replace(".", ",")
+    pMoney.textContent = "Saldo: R$ " + money[id].toFixed(2).replace(".", ",").replace(/(\d)(\d{3})(\d{3}),/g, "$1.$2.$3,").replace(/(\d)(\d{3}),/g, "$1.$2,").replace(/(\d)(\d{3})(\d{3}),/g, "$1.$2.$3,").replace(/(\d)(\d{3}),/g, "$1.$2,")
     checkMoney(id, painel)
     let initial = painel.querySelector('.initialInput')
     initial.value = "R$ 0,00"
@@ -101,7 +101,7 @@ function subMoney(button){
     money[id] = money[id] - valor
 
     let pMoney = painel.querySelector('.initCashInGame')
-    pMoney.textContent = "Saldo: R$ " + money[id].toFixed(2).replace(".", ",")
+    pMoney.textContent = "Saldo: R$ " + money[id].toFixed(2).replace(".", ",").replace(/(\d)(\d{3})(\d{3}),/g, "$1.$2.$3,").replace(/(\d)(\d{3}),/g, "$1.$2,")
     checkMoney(id, painel)
     let initial = painel.querySelector('.initialInput')
     initial.value = "R$ 0,00"
@@ -114,7 +114,7 @@ function fullTurn(button){
     money[id] = money[id] + moneyTurn
 
     let pMoney = painel.querySelector('.initCashInGame')
-    pMoney.textContent = "Saldo: R$ " + money[id].toFixed(2).replace(".", ",")
+    pMoney.textContent = "Saldo: R$ " + money[id].toFixed(2).replace(".", ",").replace(/(\d)(\d{3})(\d{3}),/g, "$1.$2.$3,").replace(/(\d)(\d{3}),/g, "$1.$2,")
 
     turns[id] = turns[id] + 1
 
@@ -126,7 +126,7 @@ function fullTurn(button){
         openNotification("Juros de R$ 30.000,00 adicionados ao empréstimo!")
 
         let pLoan = painel.querySelector('.ocult')
-        pLoan.textContent = "Empréstimo ativo: R$ " + loans[id].toFixed(2).replace(".", ",")
+        pLoan.textContent = "Empréstimo ativo: R$ " + loans[id].toFixed(2).replace(".", ",").replace(/(\d)(\d{3})(\d{3}),/g, "$1.$2.$3,").replace(/(\d)(\d{3}),/g, "$1.$2,")
     }
     }
 }
@@ -138,7 +138,7 @@ function payLoan(button){
     loans[id] = 0
 
     let pMoney = painel.querySelector('.initCashInGame')
-    pMoney.textContent = "Saldo: R$ " + money[id].toFixed(2).replace(".", ",")
+    pMoney.textContent = "Saldo: R$ " + money[id].toFixed(2).replace(".", ",").replace(/(\d)(\d{3})(\d{3}),/g, "$1.$2.$3,").replace(/(\d)(\d{3}),/g, "$1.$2,")
     let ocults = painel.querySelectorAll('.ocult')
     ocults.forEach(el => el.style.display = 'none')
 }
