@@ -382,8 +382,66 @@ button.calcButton{
 
 #popupBox {
     
-    background: #fff;
+    background: #393a7e;
     padding: 30px;
-    border-radius: 10px;
+    border-radius: 30px;
     text-align: center;
+    height: 320px;
+    width: 500px;
+    font-weight: bolder;
+    font-size: 27pt;
+    border: 5px solid #1b0f42;
+    color: white
+}
+
+#popupInput {
+
+    border-radius: 10px;
+    background-color: #ffffffbd;
+    margin-top: 20px;
+    justify-self: center;
+    height: 25%;
+    width:80%;
+    font-size: 40px;
+    text-align: center;
+    border: 3px solid black
+}
+
+#popupConfirm{
+    border-radius: 20px;
+    border: 3px solid black;
+    width: 50%;
+    height: 50px;
+    background-color: #ffffffef;
+    font-size: 15pt;
+    font-weight: bold;
+    margin-top: 20px;
+}
+
+#popupConfirm:hover{
+    border: 2px solid black;
+    background-color: #ffffffb7;
+    transform: scale(1.02);
+}
+
+#popupCancel{
+    border-radius: 20px;
+    border: 3px solid black;
+    width: 50%;
+    height: 50px;
+    background-color: #ffffffef;
+    font-size: 15pt;
+    font-weight: bold;
+    margin-top: 20px;
+    justify-self: center;
+}
+
+#popupCancel:hover{
+    border: 2px solid black;
+    background-color: #ffffffb7;
+    transform: scale(1.02);
+}
+
+#endGame{
+    background-color: white;
 }

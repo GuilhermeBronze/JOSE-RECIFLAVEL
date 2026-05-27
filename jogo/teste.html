@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="teste.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=menu" />
 </head>
 <body>
     <div class="div1">
@@ -15,21 +16,21 @@
         </div>
         <div>
             <button class="gains">Ganhos +</button>
-            <input type="number" class="playermoney1" placeholder="Dinheiro" maxlength="9" pattern="[0-9] {9}">
+            <p class="playermoney1"> <span>R$ </span> <span class="Inivalue"></span></p>
             <button class="losses">Perdas -</button>
         </div>
         <div>
-            <button class="endgame" id="endgame1">Falência</button> <!--somente após player estiver zerado -->
+            <button class="endgame" id="endgame1"><span class="material-symbols-outlined">menu</span> MENU DO JOGADOR</button>
         </div>
         <div>
             <button class="Emprestimo">$ Emprestimo $</button>
             </div>
         <div>
-            <button class="endgame" id="endgame2">Falência</button> <!--somente após player estiver zerado -->
+            <button class="endgame" id="endgame2"><span class="material-symbols-outlined">menu</span> MENU DO JOGADOR</button>
         </div>
         <div>
             <button class="gains">Ganhos +</button>
-            <input type="number" class="playermoney1" placeholder="Dinheiro" maxlength="9" pattern="[0-9] {9}">
+            <p class="playermoney1"> <span>R$ </span> <span class="inivalue"></span></p>
             <button class="losses">Perdas -</button>
         </div>
         <div>
@@ -39,4 +40,9 @@
     <input type="color" class="avatar1">
         </div>
 </body>
+<script>
+    let Valini = 150000000;
+    document.querySelector("span.inivalue").innerHTML = Valini;
+    document.querySelector("span.Inivalue").innerHTML = Valini;
+</script>
 </html>
