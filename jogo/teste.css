@@ -1,6 +1,10 @@
 body{
-    background-color: lightblue;
     font-family: 'Times New Roman', Times, serif;
+    background-image: linear-gradient(to top, #3d6fda, #89b9e6);
+    background-size: contain;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
 }
 div{
     display: flex;
@@ -36,12 +40,12 @@ div{
 }
 .playermoney1{
     margin-top: 20px;
-    text-align: center;
+    text-align: left;
     width: 500px;
     height: 50px;
     background-color: rgb(255, 255, 255);
     border: 6px solid black ;
-    font-size: 50pt;
+    font-size: 30pt;
     color: #b48f32;
 }
 .gains{
@@ -75,7 +79,7 @@ div{
 .endgame{
     color: white;
     background-color: black;
-    width: 300px;
+    width: 350px;
     height: 40px;
     font-size: 20pt;
     font-weight: bold;
@@ -91,7 +95,6 @@ div{
 #endgame2{
     margin-top: 70px;
 }
-
 .Emprestimo{
     width: 500px;
     height: 70px;

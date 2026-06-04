@@ -44,7 +44,7 @@ function closePopup(){
 
 function loan (button){
     activePlayer = button.parentElement
-    openPopup("Digite o valor do empréstimo (máx R$ 300.000,00):")
+    openPopup("Digite o valor do empréstimo (Max: R$ 300.000):")
 }
 
 function confirmLoan(){
@@ -147,7 +147,7 @@ function collapse(button){
     let painel = button.parentElement
     let id = painel.id
     
-    painel.innerHTML = '<p> FALIDO 💸 </p>'
+    painel.innerHTML = '<p id="endGame"> FALIDO 💸 </p>'
 }
 function checkMoney(id, painel){
     if (money[id] < 0){
@@ -167,7 +167,7 @@ function openNotification(message) {
     input.style.display = 'none'
     cancelBtn.style.display = 'none'
 
-    confirmBtn.textContent = 'OK'
+    confirmBtn.textContent = 'Desculpa Chefe'
     confirmBtn.onclick = closePopup
 
     openPopup(message)
@@ -180,7 +180,7 @@ function closePopup() {
 
     input.style.display = 'block'
     cancelBtn.style.display = 'block'
-    confirmBtn.textContent = 'Confirmar'
+    confirmBtn.textContent = 'Realizar empréstimo'
     confirmBtn.onclick = confirmLoan
 
     let popup = document.querySelector('#popup')
