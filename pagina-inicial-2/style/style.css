@@ -178,10 +178,18 @@
     width: 80px;
   }
 
-  #rodapo {
-    color: rgba(255, 255, 255, 0.623);
-    font-size: 6pt;
+   #rodapo{
+    font-size: 12pt;
   }
+
+  .maldito{
+    color: white;
+  }
+
+  .maldito:hover{
+    color: rgb(199, 199, 199);
+  }
+
 
   #gamePage {
     display: none;
@@ -580,10 +588,19 @@
     width: 80px;
   }
 
-  #rodapo {
-    color: rgba(255, 255, 255, 0.623);
-    font-size: 6pt;
+  #rodapo{
+    font-size: 12pt;
   }
+
+  .maldito{
+    color: white;
+  }
+
+  .maldito:hover{
+    color: rgb(199, 199, 199);
+  }
+
+  
 
   #gamePage {
     display: none;
