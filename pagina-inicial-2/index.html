@@ -55,10 +55,15 @@
     <div id="gamePage">
       <div id="gameContainer">
         <div id="p1" class="pMenu">
+          <div>
           <p class="playerName" id="playerName1">
-            Jogador 1 <span class="material-symbols-outlined">edit</span>
+          Jogador 1 <span class="material-symbols-outlined" onclick="editName()">edit</span>
           </p>
-
+          <div id="pencil1">
+          <input type="text" id="namePlayer1" placeholder="Insira o nome do jogador">
+          <button id="confirmName1" onclick="finishName()">Confirmar</button>
+          </div>
+        </div>
           <button onclick="subMoney(this)" class="calcButton">-</button>
           <input
             type="text"

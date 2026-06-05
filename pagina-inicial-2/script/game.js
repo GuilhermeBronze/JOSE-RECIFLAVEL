@@ -187,3 +187,18 @@ function closePopup() {
     popup.style.display = 'none'
     input.value = ''
 }
+
+function editName(){
+    const paragraph = document.querySelector('#playerName1');
+    const input = document.querySelector('#namePlayer1');
+    const pencil1 = document.querySelector('#pencil1');
+    pencil1.style.display = 'flex';
+}
+
+function finishName(){
+    const inputName1 = document.querySelector('#namePlayer1');
+    const finalName1 = document.querySelector('#playerName1');
+    const nameChanger = document.querySelector('#pencil1');
+    finalName1.textContent = inputName1.value;
+    nameChanger.style.display = 'none';
+}
