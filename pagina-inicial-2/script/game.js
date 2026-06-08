@@ -34,6 +34,14 @@ function openPopup(message){
     popup.style.display = 'flex'
 }
 
+function openPopup2(message){
+    let popup = document.querySelector('#popup2')
+    let msg = document.querySelector('#popupMsg2')
+
+    msg.textContent = message
+    popup.style.display = 'flex'
+}
+
 function closePopup(){
     let popup = document.querySelector('#popup')
     let input = document.querySelector('#popupInput')
@@ -42,9 +50,30 @@ function closePopup(){
     input.value = ''
 }
 
+function closePopup2(){
+    let popup = document.querySelector('#popup2')
+    let input = document.querySelector('#popupInput2')
+
+    popup.style.display = 'none'
+    input.value = ''
+}
+
+function editName (button){
+    activePlayer = button.parentElement
+    openPopup2("Digite o nome do jogador: ")
+}
+
 function loan (button){
     activePlayer = button.parentElement
     openPopup("Digite o valor do empréstimo (Max: R$ 300.000):")
+}
+
+function confirmName(){
+    let input = document.querySelector('#popupInput2').value
+    let id = activePlayer.id
+    let pName = activePlayer.querySelector('.playerName')
+    pName.textContent = input
+    closePopup2()
 }
 
 function confirmLoan(){
@@ -186,19 +215,4 @@ function closePopup() {
     let popup = document.querySelector('#popup')
     popup.style.display = 'none'
     input.value = ''
-}
-
-function editName(){
-    const paragraph = document.querySelector('#playerName1');
-    const input = document.querySelector('#namePlayer1');
-    const pencil1 = document.querySelector('#pencil1');
-    pencil1.style.display = 'flex';
-}
-
-function finishName(){
-    const inputName1 = document.querySelector('#namePlayer1');
-    const finalName1 = document.querySelector('#playerName1');
-    const nameChanger = document.querySelector('#pencil1');
-    finalName1.textContent = inputName1.value;
-    nameChanger.style.display = 'none';
 }
