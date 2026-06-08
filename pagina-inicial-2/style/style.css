@@ -743,6 +743,7 @@
 
   p.playerName {
     font-size: 18pt;
+    display: inline-block;
   }
 
   .material-symbols-outlined {
