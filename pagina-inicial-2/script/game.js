@@ -175,8 +175,18 @@ function payLoan(button){
 function collapse(button){
     let painel = button.parentElement
     let id = painel.id
+    let chance = Math.random()
+ 
     
-    painel.innerHTML = '<p id="endGame"> FALIDO 💸 </p>'
+    if(chance > 0.99){
+    painel.innerHTML = '<img src="media/PRERIGO.png" alt="PRERIGO" class="caveira">'
+    }else if(chance < 0.01){
+    painel.innerHTML = '<img src="media/YO-HO-HO.png" alt="YO-HO-HO" class="caveira">'
+    }else if(chance === 0.1707){
+    painel.innerHTML = '<img src="media/CINEMA.png" alt="ABSOLUTE CINEMA" class="caveira">'
+    } else{
+    painel.innerHTML = '<img src="media/FALIDO.png" alt="Falido" class="caveira">'
+    }
 }
 function checkMoney(id, painel){
     if (money[id] < 0){

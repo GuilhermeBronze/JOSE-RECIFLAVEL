@@ -217,7 +217,7 @@
   }
 
   #gameContainer > div {
-    background-color: #717bbb9a;
+    background-color: #717bbb99;
     border: solid black 1px;
     border-radius: 10px;
 
@@ -490,6 +490,14 @@
 
   #confirmName1:hover{
     transform: scale(1.02);
+  }
+
+  .caveira{
+    display:flex;
+    justify-self: center;
+    width:150px;
+    height: 150px;
+    margin-right: 20px;
   }
 }
 
