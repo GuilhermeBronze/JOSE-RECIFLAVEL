@@ -42,31 +42,31 @@ function playersTrue(){
 
     switch (playerCount) {
         case 2:
-            alert("beterraba")
+            
             break;
     
         case 3:
-            activePlayers[p3] = true
+            activePlayers['p3'] = true
             break
 
         case 4:
-            activePlayers[3] = true
-            activePlayers[4] = true
+            activePlayers['p3'] = true
+            activePlayers['p4'] = true
 
             break
 
         case 5:
-            activePlayers[3] = true
-            activePlayers[4] = true
-            activePlayers[5] = true
+            activePlayers['p3'] = true
+            activePlayers['p4'] = true
+            activePlayers['p5'] = true
 
             break
 
         case 6:
-            activePlayers[3] = true
-            activePlayers[4] = true
-            activePlayers[5] = true
-            activePlayers[6] = true
+            activePlayers['p3'] = true
+            activePlayers['p4'] = true
+            activePlayers['p5'] = true
+            activePlayers['p6'] = true
 
             break
 
@@ -232,12 +232,11 @@ function showWinner(name) {
 
 function checkWinner() {
     let playersStanding = Object.keys(activePlayers).filter(id => activePlayers[id] === true)
-    alert(playersStanding)
     if (playersStanding.length === 1) {
         let idWinner = playersStanding[0]
         let painel = document.querySelector('#' + idWinner)
         let name = painel.querySelector('.playerName').textContent.trim()
-        openPopup3(name)
+        openPopup3("Parabéns: " + name + " você ganhou a partida!")
     }
 
 }
