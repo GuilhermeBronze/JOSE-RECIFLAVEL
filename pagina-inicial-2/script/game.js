@@ -92,7 +92,7 @@ function openPopup3(message){
     let popup = document.querySelector('#popup3')
     let msg = document.querySelector('#popupMsg3')
 
-    msg.textContent = message
+    msg.innerHTML = message
     popup.style.display = 'flex'
 }
 
@@ -236,7 +236,7 @@ function checkWinner() {
         let idWinner = playersStanding[0]
         let painel = document.querySelector('#' + idWinner)
         let name = painel.querySelector('.playerName').textContent.trim()
-        openPopup3("Parabéns: " + name + " você ganhou a partida!")
+        openPopup3("Parabéns: " + name + ' <img src="media/Trofeu.png" alt="parabéns" class="trofeu">' + " você ganhou a partida!")
     }
 
 }
