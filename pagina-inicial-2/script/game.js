@@ -1,5 +1,13 @@
 
-let activePlayer = null
+let activePlayers = {
+    p1: true,
+    p2: true,
+    p3: false,
+    p4: false,
+    p5: false,
+    p6: false
+
+}
 let loans = {
     p1: 0,
     p2: 0,
@@ -26,6 +34,44 @@ let loanTurns = {
     p6: 0
 }
 
+function playersTrue(){
+
+    let playerCountF = document.querySelector('#playerCount')
+    let playerCount = Number(playerCountF.value)
+    
+
+    switch (playerCount) {
+        case 2:
+            alert("beterraba")
+            break;
+    
+        case 3:
+            activePlayers[p3] = true
+            break
+
+        case 4:
+            activePlayers[3] = true
+            activePlayers[4] = true
+
+            break
+
+        case 5:
+            activePlayers[3] = true
+            activePlayers[4] = true
+            activePlayers[5] = true
+
+            break
+
+        case 6:
+            activePlayers[3] = true
+            activePlayers[4] = true
+            activePlayers[5] = true
+            activePlayers[6] = true
+
+            break
+
+    }
+}
 function openPopup(message){
     let popup = document.querySelector('#popup')
     let msg = document.querySelector('#popupMsg')
@@ -37,6 +83,14 @@ function openPopup(message){
 function openPopup2(message){
     let popup = document.querySelector('#popup2')
     let msg = document.querySelector('#popupMsg2')
+
+    msg.textContent = message
+    popup.style.display = 'flex'
+}
+
+function openPopup3(message){
+    let popup = document.querySelector('#popup3')
+    let msg = document.querySelector('#popupMsg3')
 
     msg.textContent = message
     popup.style.display = 'flex'
@@ -172,21 +226,40 @@ function payLoan(button){
     ocults.forEach(el => el.style.display = 'none')
 }
 
+function showWinner(name) {
+    openPopup2("Você estuprou o resto jogador: " + name )
+} 
+
+function checkWinner() {
+    let playersStanding = Object.keys(activePlayers).filter(id => activePlayers[id] === true)
+    alert(playersStanding)
+    if (playersStanding.length === 1) {
+        let idWinner = playersStanding[0]
+        let painel = document.querySelector('#' + idWinner)
+        let name = painel.querySelector('.playerName').textContent.trim()
+        openPopup3(name)
+    }
+
+}
+
 function collapse(button){
     let painel = button.parentElement
     let id = painel.id
+    let name = painel.querySelector('.playerName').textContent.trim()
     let chance = Math.random()
+    activePlayers[id] = false
  
     
     if(chance > 0.99){
-    painel.innerHTML = '<img src="media/PRERIGO.png" alt="PRERIGO" class="caveira">'
+    painel.innerHTML = name + '<img src="media/PRERIGO.png" alt="PRERIGO" class="caveira">'
     }else if(chance < 0.01){
-    painel.innerHTML = '<img src="media/YO-HO-HO.png" alt="YO-HO-HO" class="caveira">'
+    painel.innerHTML = name + '<img src="media/YO-HO-HO.png" alt="YO-HO-HO" class="caveira">'
     }else if(chance === 0.1707){
-    painel.innerHTML = '<img src="media/CINEMA.png" alt="ABSOLUTE CINEMA" class="caveira">'
+    painel.innerHTML = name + '<img src="media/CINEMA.png" alt="ABSOLUTE CINEMA" class="caveira">'
     } else{
-    painel.innerHTML = '<img src="media/FALIDO.png" alt="Falido" class="caveira">'
+    painel.innerHTML = name + '<img src="media/FALIDO.png" alt="Falido" class="caveira">'
     }
+    checkWinner()
 }
 function checkMoney(id, painel){
     if (money[id] < 0){

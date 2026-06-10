@@ -59,7 +59,7 @@ function changeGameLayout(){
             document.querySelector('#p4').style.display = 'none'
             document.querySelector('#p5').style.display = 'none'
             document.querySelector('#p6').style.display = 'none'
-
+            
             break
 
         case 4:
